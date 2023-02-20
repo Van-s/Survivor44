@@ -26,26 +26,18 @@
   }
   
   
-  /******************************************
-  /* LAYOUT
-  /*******************************************/
-  header {
-  
-  }
-  
-  footer {
-  
-  }
+
   
   /******************************************
   /* ADDITIONAL STYLES
-  /*******************************************/
-  #score {
+  /******************************************S*/
+  header{
     display: flex;
+    justify-content: center;
     width: 100%;
-    flex-direction: column;
-    padding-bottom: 2rem;
+    height: 10rem;
   }
+ 
   
   
   
@@ -132,8 +124,7 @@
   
   img {
     width: 100%;
-    max-width: 6rem;
-    max-height: 6rem;
+    max-width: 10rem;
     height: 90%;
     border-radius: 10%;
     padding: 0.5rem;
