@@ -11,15 +11,20 @@
 		<!-- external CSS link -->
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
+		<script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-base.min.js"></script>
+	
+		<style type="text/css">      
+			html, body, #container { 
+			  width: 100%; height: 100%; margin: 0; padding: 0; 
+			} 
+		  </style>
 	</head>
 	<body>
 		<header>
 			<img class="logo" src="./images/Survivor_44_logo.jpg" alt="Survivor 44 logo">
 		</header>
 		
-		<main class="graph">
-
-		</main>
+		<div id="container"></div>
 
 		<div class="holder">
 			<header>First Impressions</header>
@@ -30,5 +35,54 @@
 
 
 		<script type="text/javascript" src="main.js"></script>
+		<script>
+			anychart.onDocumentReady(function () {
+		
+			  // add data
+			  var data = [
+				["1", 0, 0],
+	
+				
+		
+			  ];
+		
+			  // create a data set
+			  var dataSet = anychart.data.set(data);
+	  
+			  // map the data for all series
+			  var firstSeriesData = dataSet.mapAs({x: 0, value: 1});
+			  var secondSeriesData = dataSet.mapAs({x: 0, value: 2});
+			  	  
+			  // create a line chart
+			  var chart = anychart.line();
+	  
+			  // create the series and name them
+			  var firstSeries = chart.line(firstSeriesData);
+			  firstSeries.name("My Score");
+			  firstSeries.stroke('#FFC000')
+			  var secondSeries = chart.line(secondSeriesData);
+			  secondSeries.name("Your Score");
+			  secondSeries.stroke('#4F7942')
+
+	  
+			  // add a legend
+			  chart.legend().enabled(true);
+		
+			  // add a title
+			  chart.title("Season 44 Race These Jeff Socks");
+		
+			  // specify where to display the chart
+			  chart.container("container");
+
+			  chart.background().fill({
+				src: "./images/jeff.jpg",
+				mode: "fit"
+				});
+		
+			  // draw the resulting chart
+			  chart.draw();
+		
+			});
+		  </script>
 	</body>
 </html>
