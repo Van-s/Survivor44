@@ -1,11 +1,47 @@
 
+
+const selections = {
+  1: {
+    longshot: 'Longshot: ',
+    found: 'first idol found: ',
+    played: 'first idol played: ',
+    number: 'Number of idols played well: '
+  },
+  2: {
+    longshot: 'Longshot: ',
+    found: 'first idol found: ',
+    played: 'first idol played: ',
+    number: 'Number of idols played well: '
+  }
+}
+
+for(let i = 1; i <= 2; i++){
+    document.getElementById('selectionHolder').innerHTML += `<section id='h${i}' class="selectionCard">
+    <section class="inner">
+      <section id = "fronth${i}" class="front">
+        <span class="selection">${selections[i].longshot}</span>
+        <span class="selection">${selections[i].found}</span>
+        <span class="selection">${selections[i].played}</span>
+        <span class="selection">${selections[i].number}</span>
+        
+      </section>
+      <section id = "backh${i}" class="back">
+        </section>
+      </section>
+    </section>`
+
+
+  }
+
+
+
 const players = {
     1 : {
       name: 'Brandon Cottom',
       alive: true,
       img: './images/brandonCottom.jpg',
       challenges: ['Age: 29', 'Job: Security Specialist'],
-      tribeColor: '#FFD580',
+      tribeColor: '#fd9941',
       tribe: 'Ratu Tribe',
       moves: ['none']
     },
@@ -14,7 +50,7 @@ const players = {
       alive: true,
       img: './images/jaimeLynn.jpg',
       challenges: ['Age: 35', 'Job: Yogi'],
-      tribeColor: '#FFD580',
+      tribeColor: '#fd9941',
       tribe: 'Ratu Tribe',
       moves: ['none']
     },
@@ -23,7 +59,7 @@ const players = {
       alive: true,
       img: './images/kaneFritzier.jpg',
       challenges: ['Age: 25', 'Job: Law Student'],
-      tribeColor: '#FFD580',
+      tribeColor: '#fd9941',
       tribe: 'Ratu Tribe',
       moves: ['none']
     },
@@ -32,7 +68,7 @@ const players = {
       alive: true,
       img: './images/laurenHarpe.jpg',
       challenges: ['Age: 31', 'Job: Elem Teacher'],
-      tribeColor: '#FFD580',
+      tribeColor: '#fd9941',
       tribe: 'Ratu Tribe',
       moves: ['none']
     },
@@ -41,7 +77,7 @@ const players = {
       alive: true,
       img: './images/maddyPomilla.jpg',
       challenges: ['Age: 28', 'Job: Charity Project Manager'],
-      tribeColor: '#FFD580',
+      tribeColor: '#fd9941',
       tribe: 'Ratu Tribe',
       moves: ['none']
     },
@@ -50,7 +86,7 @@ const players = {
       alive: true,
       img: './images/matthewGrinstead.jpg',
       challenges: ['Age: 43', 'Job: Barbershop Owner'],
-      tribeColor: '#FFD580',
+      tribeColor: '#fd9941',
       tribe: 'Ratu Tribe',
       moves: ['none']
     },
@@ -59,7 +95,7 @@ const players = {
       alive: true,
       img: './images/brucePerreault.jpg',
       challenges: ['Age: 46', 'Job: Insurance Agent'],
-      tribeColor: '#CF9FFF',
+      tribeColor: '#d8aff1',
       tribe: 'Tika Tribe',
       moves: ['none']
     },
@@ -68,7 +104,7 @@ const players = {
       alive: true,
       img: './images/yamyamArocho.jpg',
       challenges: ['Age: 36', 'Job: Salon Owner'],
-      tribeColor: '#CF9FFF',
+      tribeColor: '#d8aff1',
       tribe: 'Tika Tribe',
       moves: ['none']
     },
@@ -77,7 +113,7 @@ const players = {
       alive: true,
       img: './images/carsonGarrett.jpg',
       challenges: ['Age: 20', 'Job: Eningeer Student'],
-      tribeColor: '#CF9FFF',
+      tribeColor: '#d8aff1',
       tribe: 'Tika Tribe',
       moves: ['none']
     },
@@ -86,7 +122,7 @@ const players = {
       alive: true,
       img: './images/helenLi.jpg',
       challenges: ['Age: 29', 'Job: Product Manager'],
-      tribeColor: '#CF9FFF',
+      tribeColor: '#d8aff1',
       tribe: 'Tika Tribe',
       moves: ['none']
     },
@@ -95,7 +131,7 @@ const players = {
       alive: true,
       img: './images/sarahWade.jpg',
       challenges: ['Age: 27', 'Job: Management Consultant'],
-      tribeColor: '#CF9FFF',
+      tribeColor: '#d8aff1',
       tribe: 'Tika Tribe',
       moves: ['none']
     },
@@ -104,7 +140,7 @@ const players = {
       alive: true,
       img: './images/carolynWiger.jpg',
       challenges: ['Age: 35', 'Job: Drug Counselor'],
-      tribeColor: '#CF9FFF',
+      tribeColor: '#d8aff1',
       tribe: 'Tika Tribe',
       moves: ['none']
     },
@@ -113,7 +149,7 @@ const players = {
       alive: true,
       img: './images/mattBlankinship.jpg',
       challenges: ['Age: 27', 'Job: Security Software Engineer'],
-      tribeColor: '#90EE90',
+      tribeColor: '#8ce863',
       tribe: 'Soka Tribe',
       moves: ['none']
     },
@@ -122,7 +158,7 @@ const players = {
       alive: true,
       img: './images/heidiLagares.jpg',
       challenges: ['Age: 43', 'Job: Engineer Manager'],
-      tribeColor: '#90EE90',
+      tribeColor: '#8ce863',
       tribe: 'Soka Tribe',
       moves: ['none']
     },
@@ -131,7 +167,7 @@ const players = {
       alive: true,
       img: './images/frannieMarin.jpg',
       challenges: ['Age: 23', 'Job: Research Coordinator'],
-      tribeColor: '#90EE90',
+      tribeColor: '#8ce863',
       tribe: 'Soka Tribe',
       moves: ['none']
     },
@@ -140,7 +176,7 @@ const players = {
       alive: true,
       img: './images/dannyMassa.jpg',
       challenges: ['Age: 32', 'Job: NYC Firefighter'],
-      tribeColor: '#90EE90',
+      tribeColor: '#8ce863',
       tribe: 'Soka Tribe',
       moves: ['none']
     },
@@ -149,7 +185,7 @@ const players = {
       alive: true,
       img: './images/claireRafson.jpg',
       challenges: ['Age: 25', 'Job: Tech Investor'],
-      tribeColor: '#90EE90',
+      tribeColor: '#8ce863',
       tribe: 'Soka Tribe',
       moves: ['none']
     },
@@ -158,7 +194,7 @@ const players = {
       alive: true,
       img: './images/joshWilder.jpg',
       challenges: ['Age: 34', 'Job: Surgical Podiatrist'],
-      tribeColor: '#90EE90',
+      tribeColor: '#8ce863',
       tribe: 'Soka Tribe',
       moves: ['none']
     }
