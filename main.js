@@ -2,16 +2,18 @@
 
 const selections = {
   1: {
-    longshot: 'Longshot: ',
-    found: 'first idol found: ',
-    played: 'first idol played: ',
-    number: 'Number of idols played well: '
+    who: "Me",
+    longshot: 'Longshot: Yam Yam',
+    1: "Loser Picks",
+    2: "Lauren - Wrong - 0pts",
+    3: "Carson - Wrong - 0pts"
   },
   2: {
-    longshot: 'Longshot: ',
-    found: 'first idol found: ',
-    played: 'first idol played: ',
-    number: 'Number of idols played well: '
+    who: "You",
+    longshot: 'Longshot: RIP Helen',
+    1: "Loser Picks",
+    2: "Lauren - Wrong - 0pts",
+    3: "Carolyn - Wrong - 0pts"
   }
 }
 
@@ -19,10 +21,11 @@ for(let i = 1; i <= 2; i++){
     document.getElementById('selectionHolder').innerHTML += `<section id='h${i}' class="selectionCard">
     <section class="inner">
       <section id = "fronth${i}" class="front">
+      <span class="selection">${selections[i].who}</span>
         <span class="selection">${selections[i].longshot}</span>
-        <span class="selection">${selections[i].found}</span>
-        <span class="selection">${selections[i].played}</span>
-        <span class="selection">${selections[i].number}</span>
+        <span class="selection">${selections[i][1]}</span>
+        <span class="selection">${selections[i][2]}</span>
+        <span class="selection">${selections[i][3]}</span>
         
       </section>
       <section id = "backh${i}" class="back">
