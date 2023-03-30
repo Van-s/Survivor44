@@ -5,15 +5,21 @@ const selections = {
     who: "Me",
     longshot: 'Longshot: Yam Yam',
     1: "Loser Picks",
-    2: "Lauren - Wrong - 0pts",
-    3: "Carson - Wrong - 0pts"
+    2: "Lauren - 0pts",
+    3: "Carson - 0pts",
+    4: "Claire - 1pt",
+    5: "Tika W - 0, Soka L - 0, Matt - 0 - 0pts",
+    6: "Ratu W - 0, Tika L - 1, Josh - 0 - 1pts"
   },
   2: {
     who: "You",
     longshot: 'Longshot: RIP Helen',
     1: "Loser Picks",
-    2: "Lauren - Wrong - 0pts",
-    3: "Carolyn - Wrong - 0pts"
+    2: "Lauren - 0pts",
+    3: "Carolyn - 0pts",
+    4: "Matt - 0pts",
+    5: "Ratu W - 0, Tika L - 1, Carson -0 - 1pt",
+    6: "Ratu W - 0, Tika L - 1, Yam Yam -0 - 1pt"
   }
 }
 
