@@ -8,8 +8,12 @@ const selections = {
     2: "Lauren - 0pts",
     3: "Carson - 0pts",
     4: "Claire - 1pt",
-    5: "Tika W - 0, Soka L - 0, Matt - 0 - 0pts",
-    6: "Ratu W - 0, Tika L - 1, Josh - 0 - 1pts"
+    5: "Tika W - 0, Soka L - 0, Matt - 0 - 0pt",
+    6: "Ratu W - 0, Tika L - 1, Josh - 0 - 1pt",
+    7: "Brandon - W - 1pt, Josh - X - 1pt",
+    8: "Carson - W, Jamie - X - 0pt",
+    9: "Brandon - W, Hiedi - X, 1 Advantage - 1pt"
+
   },
   2: {
     who: "You",
@@ -19,7 +23,10 @@ const selections = {
     3: "Carolyn - 0pts",
     4: "Matt - 0pts",
     5: "Ratu W - 0, Tika L - 1, Carson -0 - 1pt",
-    6: "Ratu W - 0, Tika L - 1, Yam Yam -0 - 1pt"
+    6: "Ratu W - 0, Tika L - 1, Yam Yam -0 - 1pt",
+    7: "Danny - W, Josh - X - 1pt",
+    8: "Danny - W, Kane - X - 0pt",
+    9: "Kane - W, Brandon - X, 2 Advantages - 1pt"
   }
 }
 
