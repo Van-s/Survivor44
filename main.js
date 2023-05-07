@@ -12,7 +12,9 @@ const selections = {
     6: "Ratu W - 0, Tika L - 1, Josh - 0 - 1pt",
     7: "Brandon - W - 1pt, Josh - X - 1pt",
     8: "Carson - W, Jamie - X - 0pt",
-    9: "Brandon - W, Hiedi - X, 1 Advantage - 1pt"
+    9: "Brandon - W, Hiedi - X, 1 Advantage - 1pt",
+    10: "Carson - W, Danny -X, Lauren Extra Vote - 1pt",
+    11: "Carson - W, Danny -X, No Advantage - 2pts "
 
   },
   2: {
@@ -26,7 +28,9 @@ const selections = {
     6: "Ratu W - 0, Tika L - 1, Yam Yam -0 - 1pt",
     7: "Danny - W, Josh - X - 1pt",
     8: "Danny - W, Kane - X - 0pt",
-    9: "Kane - W, Brandon - X, 2 Advantages - 1pt"
+    9: "Kane - W, Brandon - X, 2 Advantages - 1pt",
+    10: "Carolyn - W, Heidi - X, No advantage - 0pt"
+    11: " Jamie - W, Carson - X, 1 Advantage - 0pt"
   }
 }
 
